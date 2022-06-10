@@ -4,3 +4,9 @@
 ### Solomon Markowitz
 ### Alonzo Velez
 ### Kyle Palmer
+
+Installation:
+  Dependacies:
+    *Python
+    *PIP
+    *easyAI
