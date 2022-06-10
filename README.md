@@ -5,8 +5,8 @@
 ### Alonzo Velez
 ### Kyle Palmer
 
-####Installation:
-  ####Dependacies:
+##Installation
+  ##Dependacies
     **Python
     **PIP
     **easyAI
