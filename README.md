@@ -3,4 +3,4 @@
 # Summer 2022 - Group Members
 ### Solomon Markowitz
 ### Alonzo Velez
-### Kyle _______
+### Kyle Palmer
