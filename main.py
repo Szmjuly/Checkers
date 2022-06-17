@@ -13,7 +13,6 @@
 # !/usr/bin/env python3
 from easyAI import TwoPlayerGame, Human_Player, AI_Player, Negamax
 from easyAI import solve_with_iterative_deepening
-from matplotlib.pyplot import pause
 import numpy as np
 
 # black_square
