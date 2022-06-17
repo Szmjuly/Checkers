@@ -1,3 +1,14 @@
+#### CHECKERS GAME #####
+###### PROJECT 1 #######
+########################
+# MEMBERS:
+#   - Solomon Markowitz
+#   - Alonzo Velez
+#   - Kyle Palmer
+##########################
+# Date: 06/17/2022
+##########################
+
 # [[file:checker.org::*questions][questions:1]]
 # !/usr/bin/env python3
 from easyAI import TwoPlayerGame, Human_Player, AI_Player, Negamax
@@ -164,6 +175,8 @@ class Checker(TwoPlayerGame):
         return [(i,j) for i,j in zip(x[0], x[1])]
 
     def make_move(self, pos):
+        # Function that gets the current position of the pieces from the table_pos
+        # Sets the game board equal to the new array of pieces returned by the function self.get_piece_pos_from_table
         print("**********************************************************")
         print("\t\t\tIn Make Move for Player", self.current_player)
         print("**********************************************************")
@@ -194,6 +207,9 @@ class Checker(TwoPlayerGame):
         
 
     def lose(self):
+        # Function that runs loops checking to see If either of the white pieces are in black territory
+        # And a loop that checks to see if black pieces are in white territory
+        # If pieces are in the respective territory then sets self.won = to True and returns True
         """
         black lose if white piece is in black territory
         white lose if black piece is in white territory
@@ -225,6 +241,9 @@ class Checker(TwoPlayerGame):
               
 
     def is_over(self):
+        # A function marking that the game is over is self.lose returns True
+        # If self.lose() does not return True then the game continues and is not over
+        # If the game is over then it prints self.won (The Winning Color is printed) and the function returns True
         """
         game is over immediately when one player get one of its piece into opponent's territory.
         """
@@ -260,6 +279,9 @@ class Checker(TwoPlayerGame):
         print(board)
 
     def scoring(self):
+        # Function for determining the next move by the AI
+        # Needs a return if self.lose() returns True meaning a score of -100
+        # If won however, the score is 0
         """
         win = 0
         lose = -100
