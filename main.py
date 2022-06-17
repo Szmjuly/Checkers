@@ -215,9 +215,9 @@ class Checker(TwoPlayerGame):
         white lose if black piece is in white territory
         """
 
-        print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
-        print("\t\t\tIn lose()")
-        print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+        # print("\t\t\tIn lose()")
+        # print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
 
         for p in self.players[1].pos:
             for w_territory in self.white_territory:
@@ -233,9 +233,9 @@ class Checker(TwoPlayerGame):
 
         print("\t\tNo body lost, therefore nobody won \n\t\tLet's continue the game...")
 
-        print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
-        print("\t\t\tLeaving lose()")
-        print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+        # print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+        # print("\t\t\tLeaving lose()")
+        # print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
         return False
 
               
@@ -248,9 +248,9 @@ class Checker(TwoPlayerGame):
         game is over immediately when one player get one of its piece into opponent's territory.
         """
 
-        print("////////////////////////////////////////////////")
-        print("\t\t\tIn is_over()")
-        print("////////////////////////////////////////////////")
+        # print("////////////////////////////////////////////////")
+        # print("\t\t\tIn is_over()")
+        # print("////////////////////////////////////////////////")
 
         if self.lose():
             print("The Game is Over")
@@ -259,9 +259,9 @@ class Checker(TwoPlayerGame):
 
         print("\t\t\tThe game is not over \n\t\t\tLets continue the game...")
 
-        print("////////////////////////////////////////////////")
-        print("\t\t\tLeaving is_over()")
-        print("////////////////////////////////////////////////")
+        # print("////////////////////////////////////////////////")
+        # print("\t\t\tLeaving is_over()")
+        # print("////////////////////////////////////////////////")
 
     def show(self):
         """
@@ -286,13 +286,13 @@ class Checker(TwoPlayerGame):
         win = 0
         lose = -100
         """
-        print("............................................................")
-        print("In scoring()")
-        print("............................................................")
+        # print("............................................................")
+        # print("In scoring()")
+        # print("............................................................")
 
-        print("............................................................")
-        print("Leaving scoring()")
-        print("............................................................")
+        # print("............................................................")
+        # print("Leaving scoring()")
+        # print("............................................................")
 
         return -100 if self.lose() else 0
 
